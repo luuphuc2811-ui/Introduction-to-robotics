@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Basic Structure | Begin to robotics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="bar">
+      <a class="logo" href="index.html">Robotics<b>World</b></a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="structure.html" aria-current="page">Basic Structure</a></li>
+          <li><a href="Realroboticsprojects.html">Robotics projects</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="future.html">Future</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Basic structure of a robot</h1>
+    
+    <h2>Overview</h2>
+    <p class="lead">Every robot, from a factory arm to a Mars rover, is built from five main parts that work together. The <strong>mechanical frame</strong> gives it a body, the <strong>control system</strong> decides what to do, <strong>actuators</strong> make it move, <strong>sensors</strong> tell it about the world, and the <strong>power supply</strong> keeps everything running.</p>
+    <p class="lead">Together they form one loop: <strong>sense</strong> the world, <strong>think</strong> about what to do, then <strong>act</strong>. The faster and more accurate this loop is, the more capable the robot.</p>
+    
+    <ul class="chips">
+      <li><a href="#frame">1. Mechanical frame</a></li>
+      <li><a href="#control">2. Control system</a></li>
+      <li><a href="#actuators">3. Actuators</a></li>
+      <li><a href="#sensors">4. Sensors</a></li>
+      <li><a href="#power">5. Power supply</a></li>
+    </ul>
+
+    <section class="part" id="frame">
+      <h2><span class="num">1</span>Mechanical frame <small>(links and joints)</small></h2>
+      <div class="tl-row">
+        <figure class="tl-img">
+          <img src="frame.jpg" alt="A robot's mechanical frame with links and joints" loading="lazy">
+        </figure>
+        <div class="tl-side">
+          <div class="desc">
+            <!-- Write your description of mechanical frame below -->
+            <p> A robotic system often consists of many parts, each having at least a body frame with the origin at the center of the rigid shape of the part, and axes pointing to some orthogonal directions. 
+                It allows measurements in the perspective of the part.
+                The body frame for the base of a robot is often called <a href = "https://get-help.theconstruct.ai/t/base-link-and-base-foot-print/29028/2">base link</a>. 
+                It is one of the most important frames in a robot as measurements in this frame describe how the robot as a whole sees the world</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="part" id="control">
+      <h2><span class="num">2</span>Control system <small>(the brain)</small></h2>
+      <div class="tl-row">
+        <figure class="tl-img">
+          <img src="control.jpg" alt="A robot controller board" loading="lazy">
+        </figure>
+        <div class="tl-side">
+          <div class="desc">
+            <!-- Write your description of control system below -->
+            <p>Every autonomous robot relies on a central processing architecture—its "brain"—to bridge the physical and digital worlds. Rather than just executing hardcoded instructions, a modern robotic brain continuously processes noisy sensor inputs, updates its internal representation of the environment, and generates precise physical movements in real time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="part" id="actuators">
+      <h2><span class="num">3</span>Actuators <small>(the muscles)</small></h2>
+      <div class="tl-row">
+        <figure class="tl-img">
+          <img src="actuators.jpg" alt="Electric motors used as robot actuators" loading="lazy">
+        </figure>
+        <div class="tl-side">
+          <div class="desc">
+            <!-- Write your description of actuators below -->
+            <p>A device that moves or operates something is called an actuator.
+                When an actuator receives a portion of the input energy as a feedback control signal, the actuator starts moving the machine part.
+                In other terms, an actuator transforms energy into mechanical or physical motion.
+                Actuators are used in a wide range of industries, such as manufacturing, aerospace, automotive, robotics, and home automation, to perform important functions, such as opening and closing valves, moving robotic arms, adjusting control surfaces, or actuating brakes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="part" id="sensors">
+      <h2><span class="num">4</span>Sensors <small>(the senses)</small></h2>
+      <div class="tl-row">
+        <figure class="tl-img">
+          <img src="sensors.jpg" alt="Sensors used on a robot" loading="lazy">
+        </figure>
+        <div class="tl-side">
+          <div class="desc">
+            <p>Sensors are tools that turn changes in the environment, chemicals, or physical objects into signals that can be measured. They act like bridges between the real world and digital systems, letting machines see what's going on and respond. Sensors are a big part of modern technology, from smartphones to industrial automation. They ensure that things work the way we expect them to by keeping them accurate, efficient, and smart.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="part" id="power">
+      <h2><span class="num">5</span>Power supply <small>(energy source)</small></h2>
+      <div class="tl-row">
+        <figure class="tl-img">
+          <img src="power.jpg" alt="A robot battery pack" loading="lazy">
+        </figure>
+        <div class="tl-side">
+          <div class="desc">
+            <!-- Write your description of power supply below -->
+            <p>Every machines require power to operate effectively, and robots are not an exceptional.
+                 They also need power to provide the voltage signals that make the motors turn, the sensors operate and the robot brain to operate. The simplest way of doing so is to use batteries.
+                Lithium Polymer (LiPo) and Lithium Iron Phosphate (LiFePO4) are widely used in mobile robots due to their high energy density and discharge rates.
+                </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sources">
+      <h2>SUMMARY</h2>
+      <ul>
+        <li>A modern robot is far more than an isolated assembly of mechanical parts and software; it is a tightly integrated mechatronic system driven by a continuous <strong>Sense-Think-Act</strong> loop. In this architecture, the <strong>Mechanical Frame</strong> establishes the physical structure and kinematic workspace, while <strong>Sensors</strong> act as digital senses to convert physical phenomena into actionable environmental data. The <strong>Control System</strong> serves as the central brain, executing complex algorithms to filter noise, estimate states, and make split-second decisions. 
+            These digital commands are then translated into physical movement by <strong>Actuators</strong>—the muscles of the machine—all while a regulated <strong>Power Supply</strong> acts as the lifeblood sustaining continuous operation. Mastering robotics engineering ultimately relies on optimizing the seamless synergy among these five core pillars as Embodied AI and physical hardware continue to evolve.</li>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Replace each href="#" below with your own profile link -->
+    <ul class="social">
+      <li><a href="#" aria-label="Instagram">Instagram</a></li>
+      <li><a href="#" aria-label="Facebook">Facebook</a></li>
+    </ul>
+    <p>Created by <strong>Luu Trong Phuc</strong></p>
+    <p>&copy; 2026 Robotics World. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
